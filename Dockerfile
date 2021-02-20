@@ -5,7 +5,7 @@ ENTRYPOINT ["java", "-jar", "docker-spring-boot.jar"]
 
 FROM node:alpine
 WORKDIR /src/main/frontend/calculator
-COPY package*.json ./
+COPY ./package*.json ./
 RUN npm install
 COPY . .
 EXPOSE 3000
