@@ -4,7 +4,7 @@ EXPOSE 8085
 ENTRYPOINT ["java", "-jar", "docker-spring-boot.jar"]
 
 FROM node:alpine
-WORKDIR /app
+WORKDIR /src/main/frontend/calculator
 COPY package*.json ./
 RUN npm install
 COPY . .
