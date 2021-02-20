@@ -7,6 +7,6 @@ FROM node:alpine
 WORKDIR /src/main/frontend/calculator
 COPY /src/main/frontend/calculator/package*.json ./
 RUN npm install
-COPY . .
+COPY /src/main/frontend/calculator .
 EXPOSE 3000
 CMD [ "npm", "start" ]
