@@ -1,0 +1,13 @@
+---
+- name: Pull and Run docker image of shivraj25/calculator
+  hosts: all
+  tasks:
+    - name: Pull shivraj25/calculator
+      docker_image:
+        name: shivraj25/calculator
+        source: pull
+    - name: Create default containers
+      docker_container:
+        name: c1
+        image: shivraj25/calculator
+        state: present
