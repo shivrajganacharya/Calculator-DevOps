@@ -1,1 +1,1 @@
-localhost ansible_user=user1
+172.16.130.94 ansible_user=user1
