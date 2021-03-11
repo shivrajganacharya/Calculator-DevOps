@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class CalculatorApplicationTests {
 
     @Test
-    void test() {
+    void testSqroot() {
         ComputeController controller = new ComputeController();
         double expected = 10.0;
         double actual = controller.getRoot(100);
